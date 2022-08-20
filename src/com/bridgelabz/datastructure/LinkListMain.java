@@ -1,5 +1,5 @@
 /*
- * UC 4 : Ability to insert 30 between 56 and 70.
+ * UC 5 : Ability to delete the first element in the LinkedList of sequence 56 -> 30 -> 70. 
  */
 package com.bridgelabz.datastructure;
 
@@ -8,9 +8,9 @@ public class LinkListMain {
 
 		Linklist<Integer> list1 = new Linklist();
 		list1.add(56);
+		list1.add(30);
 		list1.add(70);
-		
-		list1.insertAtMid(30);
+		list1.pop();
 		list1.show();
 
 		System.out.println();
