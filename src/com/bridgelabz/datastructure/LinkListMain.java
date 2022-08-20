@@ -1,5 +1,5 @@
 /*
- * UC 5 : Ability to delete the first element in the LinkedList of sequence 56 -> 30 -> 70. 
+ * UC 6 : Ability to delete the last element in the LinkedList of sequence 56 -> 30 -> 70. 
  */
 package com.bridgelabz.datastructure;
 
@@ -10,7 +10,7 @@ public class LinkListMain {
 		list1.add(56);
 		list1.add(30);
 		list1.add(70);
-		list1.pop();
+		list1.popBack();
 		list1.show();
 
 		System.out.println();
