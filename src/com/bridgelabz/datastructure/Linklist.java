@@ -15,22 +15,29 @@ public class Linklist<T> {
 		}
 	}
 
-	public void popBack() {
+	public void search(T data) {
+		Node current = head;
+		int i = 1;
+		boolean flag = false;
+
 		if (head == null) {
 			System.out.println("List is empty");
-			return;
 		} else {
-			if (head != tail) {
-				Node current = head;
-
-				while (current.next != tail) {
-					current = current.next;
+			while (current != null) {
+				if (current.data == data) {
+					flag = true;
+					break;
 				}
-				tail = current;
-				tail.next = null;
-			} else {
-				head = tail = null;
+				i++;
+				current = current.next;
 			}
+
+		}
+		if (flag) {
+			System.out.println("The Node with value "  + data +  " is present in the list at the position : " + i);
+
+		} else {
+			System.out.println("Node with value is not present in the list");
 		}
 	}
 
